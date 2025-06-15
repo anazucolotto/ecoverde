@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoVerde - Reciclagem Sustentável</title>
+  <link rel="stylesheet" href="ecoverde.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌱 EcoVerde</h1>
+    <p>Conectando pessoas, reciclagem e sustentabilidade</p>
+  </header>
+
+  <nav>
+    <a href="#login">Login</a>
+    <a href="#cadastro">Cadastro</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#residuo">Resíduos</a>
+    <a href="#agendamento">Agendamento</a>
+    <a href="#estatisticas">Estatísticas</a>
+  </nav>
+
+  <main>
+    <section id="login" class="card">
+      <h2>Login</h2>
+      <input type="text" id="usuario" placeholder="Usuário">
+      <input type="password" id="senha" placeholder="Senha">
+      <button onclick="login()">Entrar</button>
+      <p>Não tem conta? <a href="#cadastro">Cadastre-se</a></p>
+    </section>
+
+    <section id="cadastro" class="card">
+      <h2>Cadastro</h2>
+      <input type="text" placeholder="Nome completo">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Senha">
+      <select>
+        <option>Tipo de usuário</option>
+        <option>Cidadão</option>
+        <option>Reciclador</option>
+        <option>Ponto de Coleta</option>
+        <option>Administrador</option>
+      </select>
+      <button>Cadastrar</button>
+    </section>
+
+    <section id="dashboard" class="card">
+      <h2>Dashboard</h2>
+      <p>Bem-vindo! O que você deseja fazer hoje?</p>
+      <ul class="menu-links">
+        <li><a href="#residuo">Cadastrar novo resíduo</a></li>
+        <li><a href="#agendamento">Agendar entrega</a></li>
+        <li><a href="#estatisticas">Visualizar estatísticas</a></li>
+      </ul>
+    </section>
+
+    <section id="residuo" class="card">
+      <h2>Cadastrar Resíduo</h2>
+      <input type="text" placeholder="Tipo de resíduo">
+      <input type="text" placeholder="Quantidade">
+      <textarea placeholder="Observações"></textarea>
+      <button>Salvar Resíduo</button>
+    </section>
+
+    <section id="agendamento" class="card">
+      <h2>Agendar Entrega</h2>
+      <input type="text" placeholder="Endereço de coleta">
+      <input type="date">
+      <input type="time">
+      <button>Agendar</button>
+    </section>
+
+    <section id="estatisticas" class="card">
+      <h2>Estatísticas</h2>
+      <table>
+        <tr>
+          <th>Tipo de Resíduo</th>
+          <th>Quantidade Total</th>
+        </tr>
+        <tr>
+          <td>Papel</td>
+          <td>10 kg</td>
+        </tr>
+        <tr>
+          <td>Plástico</td>
+          <td>7 kg</td>
+        </tr>
+        <tr>
+          <td>Vidro</td>
+          <td>5 kg</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>EcoVerde © 2025 – Universidade de Vila Velha</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
